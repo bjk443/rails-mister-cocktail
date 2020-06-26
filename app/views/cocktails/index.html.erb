@@ -1,0 +1,11 @@
+<h1> John's Cocktail Bar </h1>
+
+<%= image_tag "profile photo.jpg", width: 200, alt: "blank" %>  
+<% @cocktails.each do |cocktail| %>
+<img src= <%= cocktail.image_url %> alt="cocktail" width="300" height="250">
+<h2><%= link_to cocktail.name, cocktail_path(cocktail.id) %> 
+</h2>
+<% end %>
+
+<%= link_to 'Add new cocktail', new_cocktail_path(@cocktail) %>
+<!-- link to create a new cocktail -->
