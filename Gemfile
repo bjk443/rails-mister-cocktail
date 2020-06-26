@@ -12,6 +12,8 @@ gem 'font-awesome-sass', '~> 5.12.0'
 
 gem 'simple_form'
 
+gem 'cloudinary', '~> 1.12.0'
+
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
